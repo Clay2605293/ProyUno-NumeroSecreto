@@ -1,39 +1,124 @@
+@import url(https://unpkg.com/css-peeps@1/css-peeps.compat.css);
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background: rgb(126,13,150);
-    background: linear-gradient(90deg, rgba(126,13,150,1) 0%, rgba(73,11,107,1) 100%);
-    color: #fff;
+    color: #151515;
     font-family: 'Play', sans-serif;
 }
 
 header {
     text-align: center;
     padding: 10px;
-    font-size: 2.5em;
-    height: 20vh;
+    font-size: 2rem;
+    height: 10vh;
 }
 
 main {
-    padding: 20px;
-    height: 70vh;
+    display: flex;
+    justify-content: space-between;
 }
 
 footer {
     text-align: center;
     padding: 10px;
+    height: 10vh;
+}
+
+.object-container{
+    width: 30%;
+    margin: auto;
+    object-position: center;
+    text-align: center;
+    margin-left: 5%;
+}
+
+a {
+    --peep-hat-color: #FC03C2;
+    --peep-hair-color: #7300E6;
+    --peep-skin-color: #fff2d5;
+    --peep-accessory-color: #00ff00;
+    --peep-facial-hair-color: #ffd700;
+    --peep-object-color: #ffa500;
+    --peep-clothes-color: #232323;
+
+    --peep-zoom: 1.1;
+
+    --peep-body-offset-x: -32px;
+    --peep-body-offset-y: 1px;
+    display: inline-block;
+    width: 30vw;
+    min-width: 360px;
+    height: 60vh;
+    min-height: 403px;
+    margin-top: 5vh;
+}
+
+a.hidden {
+    display: none;
+}
+
+a:nth-child(2),
+a:nth-child(3) {
+    display: none;
+}
+
+.game-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.game-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input {
+    margin: 10px 0;
+    padding: 5px;
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
 }
 
 button {
+    margin: 10px;
     padding: 10px;
-    color: #fff;
-    border: none;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
 }
 
-object{
-    width: 30%;
-    margin: auto;
-    position: absolute;
-    align-items: center;
+#checkButton {
+    background-color: #4CAF50; /* Verde */
+}
+
+#nextButton {
+    background-color: #3498DB; /* Azul */
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    background-color: #ccc;
+}
+
+.object-container {
+    flex-grow: 1;
+}
+
+h2{
+    font-size: 2.5em;
 }

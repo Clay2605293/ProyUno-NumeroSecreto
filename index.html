@@ -15,15 +15,36 @@
     </header>
     
     <main>
-        <object data="img/cartoonghost.svg" type="image/svg+xml">
+        <div class="object-container">
+            <object>
+                <a href="https://css-peeps.com/" data-css-peeps="short2 smile beard1 laptop" id="elemento1" target="_blank"></a>
+                <a href="https://css-peeps.com/" data-css-peeps="short2 suspicious beard1 laptop" target="_blank" id="elemento2" class="hidden"></a>
+                <a href="https://css-peeps.com/" data-css-peeps="short2 loving-grin1 beard1 laptop" target="_blank" id="elemento3" class="hidden"></a>
+            </object>
+        </div>
 
-        </object>
+        <div class="game-container">
+            <div class="game-info">
+                <h2>Adivina el número del 1 al 10</h2>
+                <input type="number" id="userInput" min="1" max="10">
+                <div class="button-container">
+                    <button id="checkButton">Comprobar</button>
+                    <button id="nextButton" disabled>Siguiente número</button>
+                </div>
+            </div>
+            <div>
+                <p>Prueba</p>
+                <p>Prueba</p>
+                <p>Prueba</p>
+            </div>
+        </div>
+
+
     </main>
 
     <footer>
         
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
