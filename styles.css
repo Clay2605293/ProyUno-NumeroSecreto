@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: rgb(126,13,150);
+    background: linear-gradient(90deg, rgba(126,13,150,1) 0%, rgba(73,11,107,1) 100%);
+    color: #fff;
+    font-family: 'Play', sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    font-size: 2.5em;
+    height: 20vh;
+}
+
+main {
+    padding: 20px;
+    height: 70vh;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+object{
+    width: 30%;
+    margin: auto;
+    position: absolute;
+    align-items: center;
+}
